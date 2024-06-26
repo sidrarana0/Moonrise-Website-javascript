@@ -1,0 +1,378 @@
+@font-face {
+  font-family: neue;
+  src: url(./NeueHaasDisplayBold.ttf);
+}
+@font-face {
+  font-family: neue;
+  font-weight: 100;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+  font-family: neue;
+  font-weight: 200;
+  src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:neue;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+  }
+  nav{
+   padding: 5vh 8vh;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav-part2{
+    display: flex;
+    align-items: center;
+    gap:1vw ;
+    position: relative;
+    
+
+  }
+  #nav-part2 h4{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(10, 9, 9);
+    font-weight: 500;
+    border: 1px solid rgba(8, 3, 1, 0.671);
+    border-radius: 50px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+  }
+  #nav-part2 h4::after {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 46, 12);
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+    border-radius: 50%;
+
+  }
+  #nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+
+  }
+  #nav-part2 h4 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+  }
+  #nav-part2 h4:hover a{
+    color: aliceblue;
+    overflow: hidden;
+  }
+  #center{
+    width: 100%;
+    height: 65vh;
+    /* background-color: orange; */
+    align-items: end;
+    justify-content: space-between;
+    display: flex;
+    padding: 2px;
+    border-bottom: 1.5px solid black;
+    padding: 10px 40px;
+  }
+  #left{
+    width: 25vw;
+    padding-bottom: 2px;
+    font-size: 1.8vw;
+  
+  }
+  #right h1{
+    font-size: 22vh;
+    line-height: 90%;
+    text-align: right;
+  }
+  #hero-shap{
+    position: absolute;
+    width: 36vw;
+    height: 26vw;
+    right: 0%;
+    top: 78vh;
+  
+  }
+  #hero1{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: orangered;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+  }
+  #hero2{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px);
+  }
+  #hero3{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px); 
+    animation-name: move;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes move {
+    from{
+      transform: translate(-10%,10%);
+    }
+
+    to{
+      transform: translate(10%,-10%);
+    }
+    
+  }
+
+  video{
+    position: relative;
+   padding: 20px;
+   width: 100%;
+   border-radius: 30px;
+  } 
+  #page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    
+  }
+  #gola{
+    background-color: orangered;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw;
+    
+  }
+  
+  .con{
+    display: inline-block;
+    white-space: nowrap;
+     animation-name: move2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  }
+    
+  
+  #moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+    
+    
+  }
+  #moving-text::-webkit-scrollbar{
+    display: none;
+  }
+  
+    
+  
+  #moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+  }
+  @keyframes move2 {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+    
+  }
+  #page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 8vw 0;
+  }
+  #page2-bottum{
+    height: 80vh;
+    width: 100%;
+   
+    display: flex;
+    padding: 10vw 10vw ;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+  }
+  
+  
+  #page2-bottum1 h1{
+    font-size: 2.5vw;
+    width: 60%;
+    height: 40%;
+    line-height: 3.5vw;
+    font-size:250% ;
+    padding-bottom: 20%;
+  }
+  #bottum2 {
+    width: 50%;
+   
+    
+  }
+  #bottum2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    
+  }
+  #bottum2 p{
+    
+    font-weight: 200;
+    padding-top: 30px;
+    color: solid black;
+  }
+    #kobi{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    top: 48%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: move3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    background-color: #FE330A
+    
+  }
+  @keyframes move3 {
+    from{
+      transform: translate(10%,-10%) skew(0);
+    }
+    to{
+      transform: translate(-10%,10%) skew(-14deg);
+    }
+    
+  }
+   #page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+    
+   }
+   .elem{
+    height: 100px;
+    width: 100%;
+    border-bottom: solid rgb(102, 98, 98);
+    padding: 0 2vw;
+    position: relative;
+    overflow: hidden;
+    
+   }
+   .elem h2{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    z-index: 9;
+    position: relative;
+   }
+   .elem .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    top: -100%;
+    transition: all ease 0.3s;
+    left: 0;
+
+   }
+   .elem:hover .overlay{
+    top: 0%;
+   }
+  
+   #box{
+    width: 20vw;
+    height: 25vw;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 99;
+    border-radius: 10px;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+
+   }
+   #new h5{
+    padding-bottom: 20px;
+    padding-left: 35px;
+    font-size: 20px;
+    
+
+   }
+   #bol{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+    left: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+    
+   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
